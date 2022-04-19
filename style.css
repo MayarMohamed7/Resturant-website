@@ -1,0 +1,51 @@
+body{
+	background-color:#ADD8E6;
+	 
+}
+.sbox{
+	width: 360px;
+	height: 620px;
+	margin: auto;
+	background-color: white;
+	border-radius: 3px;
+}
+h1{ 
+ text-align: center;
+  padding-top: 15px;	
+  color:#49c1a2 ;
+}
+form{
+	width:300px;
+	margin-left: 20px;
+}
+form input{
+	display: block;
+	width : 100%;
+	padding: 7px;
+	border-radius: 6px;
+	border: 1px solid gray;
+}
+form label{
+	display: flex;
+	margin-top: 20px;
+}
+input[type="submit"]{
+    margin-top: 20px;
+	background-color: #49c1a2;
+	color: white;
+	
+}
+.error{
+	background-color: #f2dede;
+	color: red;
+	padding: 10px;
+	width:95%;
+	border-radius: 5px;
+}
+.lbox{
+	width: 360px;
+	height: 620px;
+	margin: auto;
+	background-color: white;
+	border-radius: 3px;
+	}
