@@ -3,8 +3,8 @@
 <head>
   
 <title>Cairo GRND Restaurant</title>
-<link rel="icon" type="image/x-icon" href="Cairo GRND Restaurant.png"> 
-<meta charset="UTF-8">                             <!-- covers almost all of the characters and symbols in the world! -->
+<link rel="icon" type="image/x-icon" href="Cairo GRND Restaurant.png">                   <!--icon/logo of the website -->
+<meta charset="UTF-8">                                                 <!-- covers almost all of the characters and symbols in the world! -->
   
 <style>
 .grid-container
@@ -74,7 +74,7 @@ div.container {
 </head>
   
 <a href="https://www.google.com/"><img title="Cairo GRND Restaurant"style="padding:10px;" src="Cairo GRND Restaurant.png"alt="Cairo GRND Restaurant" width="110" height="120"> </a>
-  
+                                       <!-- The title refers to the tiptoe of the image--> 
 <hr>
   
 <body>
@@ -98,7 +98,7 @@ x.style.height="60px";
 </script>
   
 <header>
-<h1 id="Top"style="text-align:center; text-decoration:underline;"> Welcome! </h1>  
+<h1 id="Top"style="text-align:center; text-decoration:underline;"> Welcome! </h1>   <!--id "Top" is used in the Top button -->
 </header>
   
 <br>
@@ -169,7 +169,7 @@ x.style.height="60px";
 
 
  <div style="background-color:gray; padding:20px; font-family:sans-serif; ">
-  <p ><a href="mailto:CairoGRNDRestaurant@gmail.com">Inquiries	</p>
+  <p ><a href="mailto:CairoGRNDRestaurantInquiries@gmail.com">Inquiries	</p>    <!-- mailto:someone@gmail.com is used to send email-->
 <p></a><a href=""> Careers</a></p>
 
 
@@ -179,7 +179,7 @@ x.style.height="60px";
 
 
 <div style="background-color:LightGray; font-family:serif; ">
-<p style="text-align:center; font-Size:15px;"> Copyright &copy; 2022 Cairo GRND Restaurant </p>
+<p style="text-align:center; font-Size:15px;"> Copyright &copy; 2022 Cairo GRND Restaurant </p>    <!-- ' &copy; ' is a copyright symbol-->
 </body>
 </html>
 
