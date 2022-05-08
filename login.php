@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <html>
 <head>
 	
@@ -29,28 +32,22 @@ $username = "root";
 $password = "";
 $DB = "project";
 $conn = mysqli_connect($servername, $username, $password, $DB);
-	
-if(!$conn)
-{
-   die("connection failed: ".mysqli_connect_error());
-   exit();
-}
-	
-$sql = "SELECT * FROM users WHERE email='$e' AND password='$p'";
+if(isset($_POST['submit'])){	
+$sql = "SELECT * FROM users WHERE email='".$_POST["email"]."' AND password='".$_POST["pass"]."'";
 $result = mysqli_query($conn, $sql);
 
-if (mysqli_num_rows($result) === 1)
+if (($row=mysqli_fetch_array($result))
 {   
-     $row = mysqli_fetch_assoc($result);
-	
-     if ($row['email'] === $e && $row['password'] === $p) 
-     {     
-	     echo "Logged in!";
-     }
+   $_SESSION["email"]=$row["email"];
+   $_SESSION["pass"]=$row["password"];
+    header("Location:homepage.php");
+}
 	
      else
      {
-       echo "sign up please";
+       ?>
+	   <p class= "error"> <?php echo("An email with this password doesn't exist.Sign up please.");?> </p>
+	<?php 
      }
 }
 ?>
