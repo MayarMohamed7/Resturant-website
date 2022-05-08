@@ -4,7 +4,8 @@
   
 <title>Cairo GRND Restaurant</title>
 <link rel="icon" type="image/x-icon" href="Cairo GRND Restaurant.png"> 
-
+<meta charset="UTF-8">                             <!-- covers almost all of the characters and symbols in the world! -->
+  
 <style>
 .grid-container
 {
@@ -70,15 +71,15 @@ div.container {
   
 }
 </style>
-
 </head>
-<a href="https://www.google.com/"><img style="padding:10px;" src="Cairo GRND Restaurant.png"alt="Cairo GRND Restaurant" width="110" height="120"> </a>
+  
+<a href="https://www.google.com/"><img title="Cairo GRND Restaurant"style="padding:10px;" src="Cairo GRND Restaurant.png"alt="Cairo GRND Restaurant" width="110" height="120"> </a>
+  
 <hr>
-
-
-
+  
 <body>
-  <script>
+  
+<script>
 function BigImage(x)
 {
 x.style.width= "75px";
@@ -95,13 +96,13 @@ x.style.height="60px";
 }
 
 </script>
+  
 <header>
 <h1 id="Top"style="text-align:center; text-decoration:underline;"> Welcome! </h1>  
 </header>
-
-
-
+  
 <br>
+  
 <div class="grid-container">
 <div class="grid-item"> <a href="https://www.google.com/"> <img src="juice.jpg" width="60" height="60" alt="Fresh Juice" onmouseover="BigImage(this)" onmouseout="NormalImage(this)"> </a>
    <div class="container">
@@ -162,7 +163,6 @@ x.style.height="60px";
 </div>
 <br>
 <a href="#top"> <button type="button"> &uarr; Top</button></a>
-
 
 <footer>
 <br>
