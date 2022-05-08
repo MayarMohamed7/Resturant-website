@@ -36,7 +36,7 @@ if(isset($_POST['submit'])){
 $sql = "SELECT * FROM users WHERE email='".$_POST["email"]."' AND password='".$_POST["pass"]."'";
 $result = mysqli_query($conn, $sql);
 
-if (($row=mysqli_fetch_array($result))
+if ($row=mysqli_fetch_array($result))
 {   
    $_SESSION["email"]=$row["email"];
    $_SESSION["pass"]=$row["password"];
