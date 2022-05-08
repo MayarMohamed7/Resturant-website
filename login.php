@@ -46,6 +46,12 @@ if ($row=mysqli_fetch_array($result))
      $_SESSION["pass"]=$row["password"];
      header("Location:homepage.php");
 }
+else if($_POST["email"]=="qualityc@gmail.com" && $_POST["pass"]== "qualityc911"){
+			header("Location:qualityc.php");
+}
+else if($_POST["email"]=="cashier1@gmail.com" && $_POST["pass"]== "cashierv"){
+			header("Location:cashierv.php");
+}
 	
 else
 {
