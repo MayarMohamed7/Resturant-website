@@ -87,8 +87,8 @@ background-color:gray;
 
 
  <div style="background-color:black; padding:20px; font-family:sans-serif; ">
-  <p ><a href="mailto:CairoGRNDRestaurant@gmail.com">Inquiries	</p>
-<p></a><a href=""> Careers</a></p>
+  <p title="Inquiries"><a href="mailto:CairoGRNDRestaurant@gmail.com">Inquiries	</p>
+<p title="Careers"></a><a href=""> Careers</a></p>
 
 
 </div>
