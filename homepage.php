@@ -29,53 +29,59 @@ body
 font-family:Ariel,Helvetica;
 }
 
-header
-{
-background-color:LightGray;
-padding:30px;
-text-align:center;
-font-size:20px;
-color:white;
-}
-
-nav
-{
-float:left;
-width:30%;
-background:#ccc;
-padding:20px;
-}
-
-nav ul
-{
-list-style-type:square;
-padding:0;
-}
-
-
 a:link,a:visited
 {
 color:white;
 }
 
-a:hover,a:active
+a:hover
 {
-color:blue;
+color:white;
+text-decoration:underline;
+}
+a:active
+{
+color:gray;
 text-decoration:underline;
 }
 
 
-
-div.container {
+div.container 
+{
   text-align: center;
   
+}
+  
+ul 
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+  
+li 
+{
+  float: left; 
+}
+
+li a:link 
+{
+  display: block;
+  padding: 12px;
+  color:white;
+ }
+  
+li a:hover
+{
+text-decoration:underline;
+background-color:gray;
 }
 </style>
 </head>
   
-<a href="https://www.google.com/"><img title="Cairo GRND Restaurant"style="padding:10px;" src="Cairo GRND Restaurant.png"alt="Cairo GRND Restaurant" width="110" height="120"> </a>
-                                       <!-- The title refers to the tiptoe of the image--> 
-<hr>
+<a href="http://localhost/homepage.php"><img title="Cairo GRND Restaurant"style="padding:10px;" src="Cairo GRND Restaurant.png"alt="Cairo GRND Restaurant" width="110" height="120"> </a>
+                                       <!-- The title refers to the tiptoe of the image-->
   
 <body>
   
@@ -94,14 +100,19 @@ x.style.height="60px";
 
 
 }
-
 </script>
   
-<header>
-<h1 id="Top"style="text-align:center; text-decoration:underline;"> Welcome! </h1>   <!--id "Top" is used in the Top button -->
-</header>
+<h1 id="Top">  </h1>   <!--id "Top" is used in the Top button -->
   
-<br>
+<div style="background-color:black;"> <!--Navigation bar = set of links.Note:'#' will be changed with the real URL -->
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+</div>
+<br><br>
   
 <div class="grid-container">
 <div class="grid-item"> <a href="https://www.google.com/"> <img src="juice.jpg" width="60" height="60" alt="Fresh Juice" onmouseover="BigImage(this)" onmouseout="NormalImage(this)"> </a>
@@ -168,7 +179,7 @@ x.style.height="60px";
 <br>
 
 
- <div style="background-color:gray; padding:20px; font-family:sans-serif; ">
+ <div style="background-color:black; padding:20px; font-family:sans-serif; ">
   <p ><a href="mailto:CairoGRNDRestaurantInquiries@gmail.com">Inquiries	</p>    <!-- mailto:someone@gmail.com is used to send email-->
 <p></a><a href=""> Careers</a></p>
 
