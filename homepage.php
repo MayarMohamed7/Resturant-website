@@ -125,9 +125,9 @@ x.style.height="250px";
 <div class="sticky" style="background-color:black;"> <!--Navigation bar = set of links.Note:'#' will be changed with the real URL -->
 <ul>
   <li><a href="http://localhost/homepage.php">Home</a></li>
-  <li><a href="#news">News</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#about">About</a></li>
+  <li><a href="http://localhost/News.html">News</a></li>
+  <li><a href="http://localhost/Contact.html">Contact</a></li>
+  <li><a href="http://localhost/aboutUs.html">About</a></li>
 </ul>
 </div>
 <br><br>
