@@ -10,7 +10,7 @@
 .grid-container
 {
 display:grid;
-grid-template-columns:auto auto auto;
+grid-template-columns:auto;
 background-color:Lightgray;
 padding:10px;
 }
@@ -18,7 +18,7 @@ padding:10px;
 .grid-item
 {
 background-color:rgba(255,255,255,0.9);
-border:1px solid rgba(0,0,0,0.2);
+border:1px solid rgba(0,0,0,0.1);
 padding:20px;
 text-align:center;
 
@@ -77,6 +77,24 @@ li a:hover
 text-decoration:underline;
 background-color:gray;
 }
+
+div.sticky
+{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+}
+  
+.TopButton
+{
+  background-color:white;
+  color:black;
+  font-size:20px;
+  border:1px solid black;
+  cursor:pointer;
+  
+}
 </style>
 </head>
   
@@ -88,15 +106,15 @@ background-color:gray;
 <script>
 function BigImage(x)
 {
-x.style.width= "75px";
-x.style.height= "75px";
+x.style.width= "300px";
+x.style.height= "300px";
 
 }
 
 function NormalImage(x)
 {
-x.style.width="60px";
-x.style.height="60px";
+x.style.width="250px";
+x.style.height="250px";
 
 
 }
@@ -104,9 +122,9 @@ x.style.height="60px";
   
 <h1 id="Top">  </h1>   <!--id "Top" is used in the Top button -->
   
-<div style="background-color:black;"> <!--Navigation bar = set of links.Note:'#' will be changed with the real URL -->
+<div class="sticky" style="background-color:black;"> <!--Navigation bar = set of links.Note:'#' will be changed with the real URL -->
 <ul>
-  <li><a href="#home">Home</a></li>
+  <li><a href="http://localhost/homepage.php">Home</a></li>
   <li><a href="#news">News</a></li>
   <li><a href="#contact">Contact</a></li>
   <li><a href="#about">About</a></li>
@@ -115,65 +133,40 @@ x.style.height="60px";
 <br><br>
   
 <div class="grid-container">
-<div class="grid-item"> <a href="https://www.google.com/"> <img src="juice.jpg" width="60" height="60" alt="Fresh Juice" onmouseover="BigImage(this)" onmouseout="NormalImage(this)"> </a>
+<div class="grid-item"> <img src="breakfast.jpg" width="250" height="250" alt="breakfast" onmouseover="BigImage(this)" onmouseout="NormalImage(this)"> 
    <div class="container">
-   <p> soft drinks</p> 
+   <p> Breakfast</p> 
    </div>
 </div>
 
 
 <div class="grid-item">
- <img src="juice.jpg" width="60" height="60" alt="Fresh Juice" onmouseover="BigImage(this)" onmouseout="NormalImage(this)">
+ <img src="lunch.jpg" width="250" height="250" alt="lunch" onmouseover="BigImage(this)" onmouseout="NormalImage(this)">
   <div class="container">
-  <p> soft drinks</p> 
+  <p> Lunch</p> 
   </div>
 </div>
   
-<div class="grid-item"> <img src="juice.jpg" width="60" height="60" alt="Fresh Juice" onmouseover="BigImage(this)" onmouseout="NormalImage(this)"> 
+<div class="grid-item"> <a href="http://localhost/Image1.php"> <img src="dinner.jpg" width="250" height="250" alt="Dinner" onmouseover="BigImage(this)" onmouseout="NormalImage(this)"> </a>
    <div class="container">
-   <p> soft drinks</p> 
+   <p> Dinner</p> 
    </div>
 </div>
 
-<div class="grid-item"> <img src="juice.jpg" width="60" height="60" alt="Fresh Juice" onmouseover="BigImage(this)" onmouseout="NormalImage(this)"> 
+<div class="grid-item"> <img src="drinks.jpg" width="250" height="250" alt="Beverages" onmouseover="BigImage(this)" onmouseout="NormalImage(this)"> 
    <div class="container">
-   <p> soft drinks</p> 
+   <p> Beverages</p> 
    </div>
 </div>
 
-<div class="grid-item"> <img src="juice.jpg" width="60" height="60" alt="Fresh Juice" onmouseover="BigImage(this)" onmouseout="NormalImage(this)"> 
+<div class="grid-item"> <img src="compose.jpg" width="250" height="250" alt="Compose Sandwitch" onmouseover="BigImage(this)" onmouseout="NormalImage(this)"> 
    <div class="container">
-   <p> soft drinks</p> 
-   </div>
-</div>
+   <p> Compose Sandwitch</p> 
+   </div></div>
 
-<div class="grid-item"> <img src="juice.jpg" width="60" height="60" alt="Fresh Juice" onmouseover="BigImage(this)" onmouseout="NormalImage(this)"> 
-   <div class="container">
-   <p> soft drinks</p> 
-   </div>
-</div>
-
-<div class="grid-item"> <img src="juice.jpg" width="60" height="60" alt="Fresh Juice" onmouseover="BigImage(this)" onmouseout="NormalImage(this)"> 
-   <div class="container">
-   <p> soft drinks</p> 
-   </div>
-</div>
-
-<div class="grid-item"> <img src="juice.jpg" width="60" height="60" alt="Fresh Juice" onmouseover="BigImage(this)" onmouseout="NormalImage(this)"> 
-   <div class="container">
-   <p> soft drinks</p> 
-   </div>
-</div>
-
-<div class="grid-item"> <img src="juice.jpg" width="60" height="60" alt="Fresh Juice" onmouseover="BigImage(this)" onmouseout="NormalImage(this)"> 
-   <div class="container">
-   <p> soft drinks</p> 
-   </div>
 </div> 
- 
-</div>
 <br>
-<a href="#top"> <button type="button"> &uarr; Top</button></a>
+<a href="#top"> <button class="TopButton" type="button"> &uarr; Top</button></a>
 
 <footer>
 <br>
