@@ -173,8 +173,8 @@ x.style.height="250px";
 
 
  <div style="background-color:black; padding:20px; font-family:sans-serif; ">
-  <p ><a title="Inquiries"href="mailto:CairoGRNDRestaurantInquiries@gmail.com">Inquiries	</p>    <!-- mailto:someone@gmail.com is used to send email-->
-<p></a><a title="Careers" href=""> Careers</a></p>
+  <p> <a title="Inquiries"href="mailto:CairoGRNDRestaurantInquiries@gmail.com">Inquiries</a>	</p>    <!-- mailto:someone@gmail.com is used to send email-->
+  <p> <a title="Careers" href=""> Careers</a></p>
 
 
 </div>
