@@ -166,7 +166,7 @@ x.style.height="250px";
 
 </div> 
 <br>
-<a href="#top"> <button title="Back to top"class="TopButton" type="button"> &uarr; Top</button></a>
+<a href="#top"> <button title="Back To Top"class="TopButton" type="button"> &uarr; Top</button></a>
 
 <footer>
 <br>
