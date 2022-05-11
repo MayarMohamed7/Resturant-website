@@ -166,15 +166,15 @@ x.style.height="250px";
 
 </div> 
 <br>
-<a href="#top"> <button class="TopButton" type="button"> &uarr; Top</button></a>
+<a href="#top"> <button title="Back to top"class="TopButton" type="button"> &uarr; Top</button></a>
 
 <footer>
 <br>
 
 
  <div style="background-color:black; padding:20px; font-family:sans-serif; ">
-  <p ><a href="mailto:CairoGRNDRestaurantInquiries@gmail.com">Inquiries	</p>    <!-- mailto:someone@gmail.com is used to send email-->
-<p></a><a href=""> Careers</a></p>
+  <p ><a title="Inquiries"href="mailto:CairoGRNDRestaurantInquiries@gmail.com">Inquiries	</p>    <!-- mailto:someone@gmail.com is used to send email-->
+<p></a><a title="Careers" href=""> Careers</a></p>
 
 
 </div>
