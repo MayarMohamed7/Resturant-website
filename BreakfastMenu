@@ -150,7 +150,7 @@ x.style.height="250px";
    <p class="menuitems">Cranberry Pancakes<p>
 </div>
 <div class="grid-item">
-<a href="http://localhost/SpinachEgg.html"><img src="spinacheggs.jfif" width="250" height="250" alt="spinach with eggs" onmouseover="BigImage(this)" onmouseout="NormalImage(this)"></a>
+<a href="http://localhost/breakfast3.html"><img src="spinacheggs.jfif" width="250" height="250" alt="spinach with eggs" onmouseover="BigImage(this)" onmouseout="NormalImage(this)"></a>
 <p class="menuitems">Spinach & Egg Scramble with Raspberries<p>
    </div>
  
