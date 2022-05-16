@@ -133,7 +133,7 @@ x.style.height="250px";
 <br><br>
   
 <div class="grid-container">
-<div class="grid-item"> <img src="breakfast.jpg" width="250" height="250" alt="breakfast" onmouseover="BigImage(this)" onmouseout="NormalImage(this)"> 
+<div class="grid-item"> <a href="http://localhost/BreakfastMenu.html"><img src="breakfast.jpg" width="250" height="250" alt="breakfast" onmouseover="BigImage(this)" onmouseout="NormalImage(this)"></a>
    <div class="container">
    <p> Breakfast</p> 
    </div>
@@ -141,7 +141,7 @@ x.style.height="250px";
 
 
 <div class="grid-item">
- <img src="lunch.jpg" width="250" height="250" alt="lunch" onmouseover="BigImage(this)" onmouseout="NormalImage(this)">
+<a href="http://localhost/lunchmenu.html"> <img src="lunch.jpg" width="250" height="250" alt="lunch" onmouseover="BigImage(this)" onmouseout="NormalImage(this)"></a>
   <div class="container">
   <p> Lunch</p> 
   </div>
