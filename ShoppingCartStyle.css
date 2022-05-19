@@ -1,0 +1,67 @@
+.buttonRemove
+{
+ color:white;
+ background-color:red;
+ width:70px;
+ border: none;
+ border-radius: .3em;
+ margin-left:600px;
+ height:20px;
+
+}
+.buttonRemove:hover
+{
+ background-color:DarkRed;
+}
+
+.buttonEdit
+{
+ color:white;
+ background-color:green;
+ width:70px;
+ border: none;
+ border-radius: .3em;
+ margin-left:50px;
+ height:20px;
+
+}
+.buttonEdit:hover
+{
+ background-color:Darkgreen;
+}
+
+.shoppingCartItems
+{
+color:black;
+font-family:sans-serif;
+font-size:20px;
+
+    
+
+}
+
+.item-imgs
+{ width:100px;
+height:100px;
+padding:30px;
+margin-left:20px
+}
+.Item-price
+{ color:Gray;
+  font-family:sans-serif;
+}
+.input {
+    
+    width: 50px;
+   height:20px;
+  border-radius: .3em;
+    background-color: white;
+    border: 1px solid black;
+    text-align: center;
+    margin-left: 70px;
+ color:gray;
+}
+table
+{
+padding:25px;
+}
