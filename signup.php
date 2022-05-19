@@ -61,7 +61,7 @@ die("connection failed: ".mysqli_connect_error());
 $sql = "INSERT INTO `users`(`email`, `password`, `name`) VALUES ('$e','$p', '$n')";
 if($conn->query($sql) === TRUE)
 {
-echo "Signed up successfully!";
+header("Location:http://localhost/homepage.php");
 }
 	
 else
