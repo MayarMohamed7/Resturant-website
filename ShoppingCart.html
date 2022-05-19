@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+<title>Cairo GRND Restuarant</title>
+<link rel="icon" type="image/x-icon" href="Cairo GRND Restaurant.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="ShoppingCartStyle.css">
+</head>
+<script>
+
+var removeButtons=document.getElementsByClassName('buttonRemove')
+for(var i=0; i<removeButtons.length;i++)
+{
+var button= removeButtons[i]
+button.addEventListener('click',function(event)
+{
+var buttonClicked= event.target
+buttonClicked.parentElement.parentElement.remove()  
+})
+}
+
+</script>
+<a href="http://localhost/homepage.php "><img title="Cairo GRND Restaurant" style="padding:10px;" src="Cairo GRND Restaurant.png"alt="Cairo GRND Restaurant" width="110" height="120"> </a>
+<br><br>
+
+<body>
+<nav>
+<div style="background-color:black;">
+<ul>
+  <li><a href="http://localhost/homepage.php">Home</a></li>
+  <li><a href="http://localhost/News.html">News</a></li>
+  <li><a href="http://localhost/Contact.html">Contact</a></li>
+  <li><a href="http://localhost/aboutUs.html">About</a></li>
+</ul>
+</div>
+</nav>
+<h1></h1>
+<br>
+<form action="/action_page.php">
+ <fieldset>
+   <legend style="font-family:sans-serif;"><h1>Shopping Cart</h1></legend>
+      <table class="shop-items">
+<tr class="shoppingCartItems">
+<th> Product</th>
+<th > Price</th>
+<th> Quantity</th>
+
+</tr>
+
+<tr>
+<th> <img class="item-imgs"src="Dinner.jpg""></th>
+<th class="Item-price"> $29 </th>
+<th>  <input class="input"type="number" value="1" min="1" max="5"></th>
+  <th><button class="buttonRemove" type="button"> Remove</button></th>
+<th><button class="buttonEdit" type="button"> Edit</button></th>
+</tr>
+             
+               
+         
+
+</table>
+</fieldset>
+</form>
+
+<footer>
+
+
+
+ <div style="background-color:black; padding:20px; font-family:sans-serif; ">
+  <p title="Inquiries"><a href="mailto:CairoGRNDRestaurant@gmail.com">Inquiries	</p>
+<p title="Careers"></a><a href=""> Careers</a></p>
+
+
+</div>
+</footer>
+
+
+
+<div style="background-color:LightGray; font-family:serif; ">
+<p style="text-align:center; font-Size:15px;"> Copyright &copy; 2022 Cairo GRND Restaurant </p>
+</body>
+</html>
+
