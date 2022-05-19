@@ -133,15 +133,14 @@ x.style.height="250px";
 <br><br>
   
 <div class="grid-container">
-<div class="grid-item"> <a href="http://localhost/BreakfastMenu.html"><img src="breakfast.jpg" width="250" height="250" alt="breakfast" onmouseover="BigImage(this)" onmouseout="NormalImage(this)"></a>
+<div class="grid-item"> <a href="http://localhost/BreakfastMenu.html"><img src="breakfast.jpg"  width="250" height="250" alt="breakfast" onmouseover="BigImage(this)" onmouseout="NormalImage(this)"> </a>
    <div class="container">
    <p> Breakfast</p> 
    </div>
 </div>
 
 
-<div class="grid-item">
-<a href="http://localhost/lunchmenu.html"> <img src="lunch.jpg" width="250" height="250" alt="lunch" onmouseover="BigImage(this)" onmouseout="NormalImage(this)"></a>
+<div class="grid-item"> <a href="http://localhost/lunchmenu.html"><img src="lunch.jpg" width="250" height="250" alt="lunch" onmouseover="BigImage(this)" onmouseout="NormalImage(this)"></a>
   <div class="container">
   <p> Lunch</p> 
   </div>
@@ -170,7 +169,6 @@ x.style.height="250px";
 
 <footer>
 <br>
-
 
  <div style="background-color:black; padding:20px; font-family:sans-serif; ">
   <p> <a title="Inquiries" href="mailto:CairoGRNDRestaurantInquiries@gmail.com">Inquiries</a>	</p>    <!-- mailto:someone@gmail.com is used to send email-->
