@@ -1,0 +1,185 @@
+<html>
+
+
+<style>
+.grid-container
+{
+display:grid;
+grid-template-columns: auto;
+background-color:Lightgray;
+padding:10px;
+}
+
+.grid-item
+{
+background-color:rgba(255,255,255,0.9);
+border:1px solid rgba(0,0,0,0.1);
+padding:20px;
+text-align:center;
+
+}
+
+body
+{
+font-family:Ariel,Helvetica;
+}
+
+a:link,a:visited
+{
+color:white;
+}
+
+a:hover
+{
+color:white;
+text-decoration:underline;
+}
+a:active
+{
+color:gray;
+text-decoration:underline;
+}
+
+
+div.container 
+{
+  text-align: center;
+  
+}
+  
+ul 
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+  
+li 
+{
+  float: left; 
+}
+
+li a:link 
+{
+  display: block;
+  padding: 12px;
+  color:white;
+ }
+  
+li a:hover
+{
+text-decoration:underline;
+background-color:gray;
+}
+
+div.sticky
+{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+}
+  
+.TopButton
+{
+  background-color:white;
+  color:black;
+  font-size:20px;
+  border:1px solid black;
+  cursor:pointer;
+  
+}
+h2{
+font-family: "Times New Roman", Times, serif;
+
+font-size:45px;
+text-align:center;
+}
+p.menuitems
+{text-align:center;
+}
+
+.button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+}
+</style>
+<script>
+function BigImage(x)
+{
+x.style.width= "300px";
+x.style.height= "300px";
+
+}
+
+function NormalImage(x)
+{
+x.style.width="250px";
+x.style.height="250px";
+
+
+}
+</script>
+<title>Creamy Salmon</title>
+<link rel="icon" type="image/x-icon" href="Cairo GRND Restaurant.png">
+<meta charset="UTF-8">
+
+
+<a href="http://localhost/homepage.php "><img title="Cairo GRND Restaurant" style="padding:10px;" src="Cairo GRND Restaurant.png"alt="Cairo GRND Restaurant" width="110" height="120"> </a>
+<br><br>
+<head>
+<title>Cairo GRND Restuarant</title>
+<link rel="icon" type="image/x-icon" href="Cairo GRND Restaurant.png">
+<meta charset="UTF-8">
+</head>
+<div class="sticky" style="background-color:black;"> <!--Navigation bar = set of links.Note:'#' will be changed with the real URL -->
+<ul>
+  <li><a href="http://localhost/homepage.php">Home</a></li>
+  <li><a href="http://localhost/News.html">News</a></li>
+  <li><a href="http://localhost/Contact.html">Contact</a></li>
+  <li><a href="http://localhost/aboutUs.html">About</a></li>
+</ul>
+</div>
+<br><br>
+<body>
+<div class="grid-container">
+<div class="grid-item">
+<h2>Creamy Salmon</h2>
+<img src="salmon.jpg" width="250" height="250" alt="Salmon" onmouseover="BigImage(this)" onmouseout="NormalImage(this)">
+<p>Rich and creamy, crispy on the outside, tender and juicy on the inside salmon fillets. 
+pan seared salmon in a delicious creamy sauce with spinach, sun dried tomatoes and parmesan!
+   </p>
+  <b>Any Special Requests? </b><input type="text" name="requests" size="70">  
+   <br>
+   <button class="button" name="Dinner2">Add Item 
+   </button>
+   </div>
+   </div>
+
+
+</body>
+<footer>
+<br>
+
+
+ <div style="background-color:black; padding:20px; font-family:sans-serif; ">
+  <p> <a title="Inquiries" href="mailto:CairoGRNDRestaurantInquiries@gmail.com">Inquiries</a>	</p>    <!-- mailto:someone@gmail.com is used to send email-->
+  <p> <a title="Careers"   href=""> Careers</a></p>
+
+
+</div>
+</footer>
+
+
+
+<div style="background-color:LightGray; font-family:serif; ">
+<p style="text-align:center; font-Size:15px;"> Copyright &copy; 2022 Cairo GRND Restaurant </p>    <!-- ' &copy; ' is a copyright symbol-->
+</html>
