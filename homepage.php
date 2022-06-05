@@ -147,7 +147,7 @@ x.style.height="250px";
   </div>
 </div>
   
-<div class="grid-item"> <a href="http://localhost/Image1.php"> <img src="dinner.jpg" width="250" height="250" alt="Dinner" onmouseover="BigImage(this)" onmouseout="NormalImage(this)"> </a>
+<div class="grid-item"> <a href="http://localhost/Dinnermenu.html"> <img src="dinner.jpg" width="250" height="250" alt="Dinner" onmouseover="BigImage(this)" onmouseout="NormalImage(this)"> </a>
    <div class="container">
    <p> Dinner</p> 
    </div>
