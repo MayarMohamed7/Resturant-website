@@ -137,6 +137,10 @@ x.style.height="250px";
 <title>Cairo GRND Restuarant</title>
 <link rel="icon" type="image/x-icon" href="Cairo GRND Restaurant.png">
 <meta charset="UTF-8">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet"
+href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <div class="sticky" style="background-color:black;"> <!--Navigation bar = set of links.Note:'#' will be changed with the real URL -->
 <ul>
@@ -144,6 +148,7 @@ x.style.height="250px";
   <li><a href="http://localhost/News.html">News</a></li>
   <li><a href="http://localhost/Contact.html">Contact</a></li>
   <li><a href="http://localhost/aboutUs.html">About</a></li>
+  <li><a href="ShoppingCart.php">Cart</a></li>
 </ul>
 </div>
 <br><br>
@@ -155,10 +160,16 @@ x.style.height="250px";
 <p>
    A premium Steak seared with a garlic rosemary-infused butter.
    </p>
+  <span class = "price" > <b> 65 EGP </b> </span> <br>
   <b>Any Special Requests? </b><input type="text" name="requests" size="70">  
    <br>
-   <button class="button" name="lunch2">Add Item 
-   </button>
+   <form action = "additem.php" method = "post">
+   <input type = "hidden" name = "title" value = "Pan Seared Steak">
+   <input type = "hidden" name = "price" value = "65">
+   <input type = "number" name = "qty" min = "1" max = "10" placeholder= "Quantity" class="form-control">
+   <input type = "submit" name = "additem" class="button item-button" value = "Add item">   
+   <input type = "hidden" class="button btn-danger" value = "remove">   
+   </form>
    </div>
    </div>
 
