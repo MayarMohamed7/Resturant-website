@@ -128,6 +128,7 @@ x.style.height="250px";
   <li><a href="http://localhost/News.html">News</a></li>
   <li><a href="http://localhost/Contact.html">Contact</a></li>
   <li><a href="http://localhost/aboutUs.html">About</a></li>
+   <li><a href="ShoppingCart.php">Cart</a></li>
 </ul>
 </div>
 <br><br>
