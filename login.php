@@ -1,35 +1,23 @@
 <?php
 session_start();
 ?>
-
-<html lang="en-US">
-	
+<html>
 <head>
-	
-<title>Cairo GRND Restaurant</title>
-<link rel="icon" type="image/x-icon" href="Cairo GRND Restaurant.png"> 
-<meta charset="UTF-8">                                     <!-- covers almost all of the characters and symbols in the world! -->	
 <link rel="stylesheet" href="style.css">
-
 </head>
-	
 <body>
-	
 <div class="lbox">
-<h1> Login </h1> <br>	
-<form method = "post" action = "homepage.php">
+<h1> Login </h1> <br>
+<form method = "post" action = "">
 <label>Email </label>
-<input type = "text" name = "email"><br>
+ <input type = "text" name = "email"><br>
 <label>Password </label>
 <input type = "password" name = "pass"> <br>
-<input type = "submit" value = 'submit'>
+<input type = "submit" value = "submit" name="submit">
 Don't have an account? <a href = "signup.php"> Sign up </a>
 </form>
 </div>
-	
 <?php
-$e = $_POST['email'];
-$p = $_POST['pass'];
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -66,6 +54,6 @@ $sql = "SELECT * FROM users WHERE email='".$_POST["email"]."' AND password='".$_
 			}
 		}
 }
-	?>
+		?>
 </body>
 </html>
