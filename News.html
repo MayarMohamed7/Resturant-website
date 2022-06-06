@@ -1,16 +1,31 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-
 <title>Cairo GRND Restuarant</title>
 <link rel="icon" type="image/x-icon" href="Cairo GRND Restaurant.png">
 <meta charset="UTF-8">
-
-
+</head>
 <a href="http://localhost/homepage.php "><img title="Cairo GRND Restaurant" style="padding:10px;" src="Cairo GRND Restaurant.png"alt="Cairo GRND Restaurant" width="110" height="120"> </a>
 <br><br>
 
 <style>
+    .grid-container
+    {
+    display:grid;
+    grid-template-columns:auto auto;
+    background-color:Lightgray;
+    padding:10px;
+    }
+
+    .grid-item
+    {
+    background-color:rgba(255,255,255,0.9);
+    border:1px solid rgba(0,0,0,0.1);
+    padding:20px;
+    text-align:center;
+
+    }
+
 body
 {
 font-family:Ariel,Helvetica;
@@ -30,6 +45,12 @@ a:active
 color:gray;
 text-decoration:underline;
 }
+    
+    div.container
+    {
+      text-align: center;
+      
+    }
 
 ul {
   list-style-type: none;
@@ -54,23 +75,82 @@ li a:hover
 text-decoration:underline;
 background-color:gray;
 }
+    div.sticky
+    {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      padding: 5px;
+    }
+      
+    .TopButton
+    {
+      background-color:white;
+      color:black;
+      font-size:20px;
+      border:1px solid black;
+      cursor:pointer;
+      
+    }
+    h2{
+    font-family: "Times New Roman", Times, serif;
+
+    font-size:45px;
+    text-align:center;
+    }
+    p.menuitems
+    {text-align:center;
+    }
 </style>
-</head>
 <body>
+    <script>
+    function BigImage(x)
+    {
+    x.style.width= "300px";
+    x.style.height= "300px";
+
+    }
+
+    function NormalImage(x)
+    {
+    x.style.width="250px";
+    x.style.height="250px";
+
+
+    }
+    </script>
 
 <div style="background-color:black;">
 <ul>
   <li><a href="http://localhost/homepage.php">Home</a></li>
   <li><a href="http://localhost/News.html">News</a></li>
-  <li><a href="http://localhost/Contact.html">Contact</a></li>
   <li><a href="http://localhost/aboutUs.html">About</a></li>
 </ul>
 </div>
 <br>
 
+
+<h2 style="text-align:center;">&#128608What's New!&#128609</h2>
+<h2 style="text-align:left;">COMING SOON!</h2>
+<p>These items will be added very soon to our menu!</p>
+<b>Excited?</b>
+
+<div class="grid-container">
+<div class="grid-item">
+<img src="strog.jpg" width="250" height="250" alt="Beef Stroganoff" onmouseover="BigImage(this)" onmouseout="NormalImage(this)"></a>
+<p class="menuitems">Beef Stroganoff<p>
+   </div>
+   
+   <div class="grid-item">
+<img src="spago.jpg" width="250" height="250" alt="Spago" onmouseover="BigImage(this)" onmouseout="NormalImage(this)"></a>
+   <p class="menuitems">Spago<p>
+</div>
+</div>
+<br>
+<b>do you have any suggestions to add to our menu?</b><input type="text" name="requests" size="70">
+<br>
+<br>
 <footer>
-
-
 
  <div style="background-color:black; padding:20px; font-family:sans-serif; ">
   <p title="Inquiries"><a href="mailto:CairoGRNDRestaurant@gmail.com">Inquiries	</p>
