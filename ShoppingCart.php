@@ -71,7 +71,6 @@ a:hover
 <ul>
   <li><a href="http://localhost/homepage.php">Home</a></li>
   <li><a href="http://localhost/News.html">News</a></li>
-  <li><a href="http://localhost/Contact.html">Contact</a></li>
   <li><a href="http://localhost/aboutUs.html">About</a></li>
 </ul>
 </div>
@@ -153,7 +152,7 @@ subTotal();
 
  <div style="background-color:black; padding:20px; font-family:sans-serif; ">
   <p title="Inquiries"><a href="mailto:CairoGRNDRestaurant@gmail.com">Inquiries	</p>
-<p title="Careers"></a><a href=""> Careers</a></p>
+<p title="Careers"></a><a href="http://localhost/careers.php"> Careers</a></p>
 
 
 </div>
