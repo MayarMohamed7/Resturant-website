@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  
+<link rel="stylesheet"
+href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <link rel="stylesheet" href="../main.css">
-  
 <title>Cairo GRND Restuarant</title>
 <link rel="icon" type="image/x-icon" href="Cairo GRND Restaurant.png">
+
+
+
 <a href="http://localhost/homepage.php "><img title="Cairo GRND Restaurant" style="padding:10px;" src="Cairo GRND Restaurant.png"alt="Cairo GRND Restaurant" width="110" height="120"> </a>
 <br><br>
 
@@ -126,6 +129,7 @@ label {
   padding: 0.5rem;
   font-family: sans-serif;
   border-radius: 0.3rem;
+
   margin-top: 1rem;
 }
 
