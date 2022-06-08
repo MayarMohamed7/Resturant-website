@@ -125,18 +125,17 @@ background-color:gray;
   transition: ease 0.5s;
 }
 
-.message {
-  background-color: #ebebeb;
-  overflow: hidden;
-  height: 10rem;
+label {
+  background-color: #0e3721 ;
+  color: white;
+  padding: 0.5rem;
+  font-family: sans-serif;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  margin-top: 1rem;
 }
 
-.message:hover {
-  border-bottom: 5px solid #0e3721;
-  height: 12em;
-  width: 380px;
-  transition: ease 0.5s;
-}
+
 </style>
 </head>
 <body>
@@ -155,16 +154,16 @@ background-color:gray;
 
 <div class="wrapper">
     
-<h1 style="color: grey"> Join Us </h1> <br>
+<h1 style="color: #0e3721 "> Join Us </h1> <br>
     
 <form method = "post" action = "" enctype="multipart/form-data" class=
 "form">
 <input type = "text" class="name formEntry" name = "name" placeholder="Name">
 <input type = "text" class="email formEntry" name = "email" placeholder="Email">
 <input type = "text" class="email formEntry" name = "number" placeholder="Phone Number">
-<label>Please upload your CV down below:</label>
-<input type="file" name="file"><br>
-<button type = "button" class="btn btn-info" class="submit formEntry" onclick="thanks()"> Submit </button>
+<label >Please upload your CV down below:</label>
+<input  type="file" name="file">
+<button type = "button"  class="submit formEntry" onclick="thanks()"> Submit </button>
 <br>
 </form>
  
