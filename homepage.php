@@ -128,6 +128,7 @@ x.style.height="250px";
   <li><a href="http://localhost/News.html">News</a></li>
   <li><a href="http://localhost/aboutUs.html">About</a></li>
    <li><a href="ShoppingCart.php">Cart</a></li>
+  <a href = "logOut.php" class="btn btn-outline"> Log Out</a>
 </ul>
 </div>
 <br><br>
