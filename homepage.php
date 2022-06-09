@@ -158,7 +158,7 @@ x.style.height="250px";
    </div>
 </div>
 
-<div class="grid-item"> <img src="compose.jpg" width="250" height="250" alt="Compose Sandwitch" onmouseover="BigImage(this)" onmouseout="NormalImage(this)"> 
+<div class="grid-item"><a href="http://localhost/compose.html" ><img src="compose.jpg" width="250" height="250" alt="Compose Sandwitch" onmouseover="BigImage(this)" onmouseout="NormalImage(this)"></a> 
    <div class="container">
    <p> Compose Sandwitch</p> 
    </div></div>
