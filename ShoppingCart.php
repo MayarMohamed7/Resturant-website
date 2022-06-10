@@ -20,8 +20,8 @@ if($_GET['action']=='remove'){
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <link rel="stylesheet"
 href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<title>Cairo GRND Restuarant</title>
+
+<title>Cairo GRND Restuarant-Cart</title>
 <link rel="icon" type="image/x-icon" href="Cairo GRND Restaurant.png">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -59,6 +59,23 @@ a:hover
 {
 	color:lightgray;
 }
+div.sticky
+{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+}
+.bttn{
+float:right;
+margin-right:2px;
+padding: 12px;
+font-size: 17px;
+text-decoration:underline;
+}
+.bttn:hover{
+background-color:gray;
+}	
 
 </style>
 </head>
@@ -67,11 +84,13 @@ a:hover
 
 <body>
 <nav>
-<div style="background-color:black;">
+<div class="sticky" style="background-color:black;">
 <ul>
   <li><a href="http://localhost/homepage.php">Home</a></li>
   <li><a href="http://localhost/News.html">News</a></li>
   <li><a href="http://localhost/aboutUs.html">About</a></li>
+    <a href = "logOut.php" class="bttn "> Log Out</a>
+
 </ul>
 </div>
 </nav>
