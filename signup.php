@@ -6,6 +6,9 @@ session_start();
 
 <head>	
 <link rel="stylesheet" href="style.css">
+	<title>Cairo GRND Restuarant</title>
+<link rel="icon" type="image/x-icon" href="Cairo GRND Restaurant.png">
+<meta charset="UTF-8">
 </head>
 	
 <body>
