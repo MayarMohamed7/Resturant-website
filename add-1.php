@@ -1,58 +1,66 @@
 <?php
-$server="localhost";
-$username="root";
-$password="";
-$dbname="ziad";
+if (empty($_POST['name']) ||
+    empty($_POST['email']) ||
+    empty($_POST['pass']) ||
+    empty($_POST['cpass'])) {?>
+<p class= "error"> <?php echo('Please fill all required fields!');?> </p>
+<?php }
 
-$conn = mysqli_connect($server,$username,$password,$dbname);
-if(isset($_POST['submit'])){
-  $email = filter_var($_POST["email"], FILTER_VALIDATE_EMAIL);
-    if ($email == true) {
-    
-      } else {
-        echo("$email is not a valid email address");
-      }
-     if( strlen($_POST["password"])<6)
-     {
-        echo("Password Not valid");
-     }
-  
-    if(!empty($_POST['firstname']) && !empty($_POST['lastname']) && !empty($_POST['email']) && !empty($_POST['pass']) && !empty($_POST['age'])){
-$firstname=$_POST['firstname'];
-$lastname=$_POST['lastname'];
-$email=$_POST['email'];
-$password=$_POST['password'];
-$age=$_POST['age'];
-$query = "insert into clients(firstname,lastname,email,password,age) values('$firstname' ,'$lastname' ,'$email' ,'$password' , '$age')";
-$run=mysqli_query($conn,$query) or die(mysqli_error());
-if($run){
-    echo "data submited succesfully";
+elseif ($_POST['pass'] !== $_POST['cpass']) {?>
+<p class= "error"> <?php echo("Passwords did not match");?> </p>
+ 
+<?php
 }
+elseif(!filter_var(($_POST["email"]),FILTER_VALIDATE_EMAIL)){?>
+	<p class= "error"> <?php echo("Not a valid email!");?> </p>
+ <?php	
+}
+	
 else
 {
-    echo "data not submitted ";
+$n = $_POST['name'];
+$e = $_POST['email'];
+$p = $_POST['pass'];
+$servername = 'localhost';
+$username = 'root';
+$password = "";
+$DB = 'project';
+$conn = mysqli_connect($servername, $username, $password, $DB);
+	
+if(!$conn)
+{
+die("connection failed: ".mysqli_connect_error());
 }
+	
+$sql = "INSERT INTO `users`(`name`, `email`, `pass`) VALUES ('$n','$e', '$p')";
+if($conn->query($sql) === TRUE)
+{
+header("Location:http://localhost/homepage.php");
 }
-else{
-echo "all fileds required";
+	
+else
+{
+echo "ERROR: ".sql." ".$conn->error;
 }
+	
+$conn->close();
 }
 ?>
+
 
 <?php include "menuu.php";?>
 
  
 <form action="" method="post">
-  FirstName:<br>
-  <input type="text" name="firstname"><br>
-  LastName:<br>
-  <input type="text" name="lastname"><br> 
+  Name
+  <input type="text" name="name"><br>
   Email:<br>
   <input type="text" name="email"> <br> 
   Password:<br>
   <input type="Password" name="password"><br>
-  Age:<br>
-  <input type="text" name="age"><br>
+  onfirm Password:<br>
+  <input type="Password" name="password"><br>
+  
   <input type="submit" value="Submit" name="Submit">
  
 </form>
