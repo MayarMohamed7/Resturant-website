@@ -163,7 +163,7 @@ subTotal();
 </script>
 </fieldset>
 <form action = 'checkout.php' method = 'POST'>
-     <button class="btn btn-primary btn-purchase" type="button"> CheckOut </button>        
+     <button class="btn btn-primary btn-purchase" type="submit"> CheckOut </button>        
 </form>	
 <footer>
 
