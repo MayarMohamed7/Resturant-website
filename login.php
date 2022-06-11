@@ -32,6 +32,17 @@ if(isset($_POST['submit'])){
    <p class= "error"> <?php echo('Please fill all required fields!');?> </p>
 <?php }
 else{
+	$domain = substr($_POST['email'], strpos($_POST['email'],'@')+1);
+		   if ($domain=="cashier.com"){
+			    $sql2 ="SELECT * FROM `cashiers` WHERE email='".$_POST["email"]."' AND pass='".$_POST["pass"]."'";
+			     $res = mysqli_query($conn, $sql2);
+			     if ($row2 = mysqli_fetch_array($res)) {
+                   $_SESSION["email"]=$row2["email"];
+		           $_SESSION["pass"]=$row2["password"];
+			       header("Location:cash1.php");
+			    }
+		    } 
+	else{
 		
 $sql = "SELECT * FROM users WHERE email='".$_POST["email"]."' AND password='".$_POST["pass"]."'";
 
@@ -53,9 +64,10 @@ $sql = "SELECT * FROM users WHERE email='".$_POST["email"]."' AND password='".$_
 				?>
 	             <p class= "error"> <?php echo("An email with this password doesn't exist.Sign up please.");?> </p>
 				<?php 
- 
-			}
-		}
+
+			    }
+		    }
+    }
 }
 		?>
 </body>
