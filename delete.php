@@ -1,44 +1,26 @@
 <style>
-#x {
-  font-family: Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
+table, th, td {
+  border: 1px solid black;
 }
 
-#x td, #x th {
-  border: 1px solid #ddd;
-  padding: 8px;
-}
-
-#x tr:nth-child(even){background-color: #f2f2f2;}
-
-#x tr:hover {background-color: #ddd;}
-
-#x th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color: #04AA6D;
-  color: white;
-}
 </style>
 <?php
-include "admin.php";
-$server = "localhost";
+include "menuu.php";
+$servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "mydb";
+$dbname = "";
 session_start();
 
 // Create connection
-$conn = new mysqli($server, $username, $password, $dbname);
-$query = "SELECT * FROM clients";
+$conn = new mysqli($servername, $username, $password, $dbname);
+$query = "SELECT * FROM user";
 $result = mysqli_query($conn,$query);
 if(isset($_POST['save'])){
 	$checkbox = $_POST['check'];
 	for($i=0;$i<count($checkbox);$i++){
-    $del_email = $checkbox[$i]; 
-    $sql="DELETE FROM clients WHERE email='".$del_email."'";
+    $del_id = $checkbox[$i]; 
+    $sql="DELETE FROM user WHERE Id='".$del_id."'";
 	mysqli_query($conn,$sql);
     $message = "Data deleted successfully !";
     echo ($message);
@@ -49,15 +31,14 @@ if(isset($_POST['save'])){
 <form method="post" action="">
 <table class="table table-bordered">
 <thead>
-<table id="x">
 <tr>
 
-	
+	<th> Id</th>
 	<th>First Name</th>
-	<th>Last Name</th>
+  <th>Last Name</th>
 	<th>Email</th>
 	<th>Age</th>
-    <th>Delete </th>
+  <th>Delete </th>
 	 
 </tr>
 </thead>
@@ -69,11 +50,12 @@ while($row = mysqli_fetch_array($result))
 ?>
 <tr>
   
-	<td><?= $row['firstname']; ?></td>
-    <td><?= $row['lastname']; ?></td>
-	<td><?=  $row['email']; ?></td>
-	<td><?= $row['age']; ?></td>
-    <td><input type="checkbox" id="checkItem" name="check[]" value="<?php echo $row["email"]; ?>"></td>
+	<td><?= $row['Id']; ?></td>
+	<td><?= $row['First Name']; ?></td>
+    <td><?= $row['Last Name']; ?></td>
+	<td><?=  $row['Email']; ?></td>
+	<td><?= $row['Age']; ?></td>
+    <td><input type="checkbox" id="checkItem" name="check[]" value="<?php echo $row["Id"]; ?>"></td>
 	 
 </tr>
 <?php
@@ -85,4 +67,5 @@ while($row = mysqli_fetch_array($result))
 </form>
 
 </body>
+</html>
 </html>
