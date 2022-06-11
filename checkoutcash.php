@@ -62,15 +62,14 @@ die("connection failed: ".mysqli_connect_error());
 }
 if($_SERVER["REQUEST_METHOD"]=="POST"){
 if(isset($_POST['finish'])){
-	$custemail = $_SESSION["email"]; 
    $way = $_POST["pay"];
   $date = date("Y-m-d h:i:sa");
 
-$sql = "INSERT INTO `orders`( `custemail`, `pay_meth`, `date`) VALUES ('$custemail','$way','$date')";
+$sql = "INSERT INTO `cashorders`( `pay_meth`, `date`) VALUES ('$way','$date')";
 if(mysqli_query($conn,$sql)){
 
 	      $order_id = mysqli_insert_id($conn); //return the id of the last query(kol queryb byba leha id hwa byrg3ha)
-		 $sql2 = "INSERT INTO `orderdet`(`order_id`, `food_name`, `qty`, `price`) VALUES (?,?,?,?)";
+		 $sql2 = "INSERT INTO `cashorderdet`(`order_id`, `food`, `qty`, `price`) VALUES (?,?,?,?)";
 		$stmt = mysqli_prepare($conn,$sql2); //prepare a sql stamtment to excute; 
 		//it returns statment obj if success if not then false 
 		 if($stmt){
