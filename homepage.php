@@ -95,6 +95,11 @@ div.sticky
   cursor:pointer;
   
 }
+  .btn{
+float:right;
+margin-right:2px;
+padding: 12px;
+}
 </style>
 </head>
   
