@@ -32,7 +32,7 @@ if(!$conn)
 die("connection failed: ".mysqli_connect_error());
 }
 	
-$sql = "INSERT INTO `users`(`name`, `email`, `pass`) VALUES ('$n','$e', '$p')";
+$sql = "INSERT INTO `cashiers`(`name`, `email`, `pass`) VALUES ('$n','$e', '$p')";
 if($conn->query($sql) === TRUE)
 {
 header("Location:http://localhost/homepage.php");
