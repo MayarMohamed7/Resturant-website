@@ -170,7 +170,7 @@ p.menuitems
 <div class="grid-item">
 <h2>Breakfast Tostada</h2>
   <div class="rate">
-   
+     <form action = "saverate.php" method = "POST">
  <input type="radio" id="star5" name="rate" value="5" />
     <label for="star5" title="text">5 stars</label>
     <input type="radio" id="star4" name="rate" value="4" />
@@ -181,7 +181,13 @@ p.menuitems
     <label for="star2" title="text">2 stars</label>
     <input type="radio" id="star1" name="rate" value="1" />
     <label for="star1" title="text">1 star</label>
-  </div><br><br><br><br>
+  </div>
+   <input type = "submit" name = "subrating" class = "rateb" value = "submit">
+	   <input type = "hidden" name = "title" value = "Breakfast Tostada">
+
+	</form>
+  <br><br><br><br>
+  
 <img src="Tostada.jpg" width="350" height="330" alt="Tostada" >
   <p> <b>Price 100 EGP</b></p>
 <p>This easy and satisfying Mexican-inspired breakfast recipe brings lots of flavor to your plate. Made with a fried corn tortilla, topped with eggs, refried beans, shredded cheese, salsa, and other toppings
