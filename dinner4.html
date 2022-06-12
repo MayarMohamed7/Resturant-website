@@ -139,10 +139,7 @@ x.style.height="250px";
 <title>Cairo GRND Restuarant</title>
 <link rel="icon" type="image/x-icon" href="Cairo GRND Restaurant.png">
 <meta charset="UTF-8">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<link rel="stylesheet"
-href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
 <div class="sticky" style="background-color:black;"> <!--Navigation bar = set of links.Note:'#' will be changed with the real URL -->
 <ul>
@@ -157,6 +154,24 @@ href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <div class="grid-container">
 <div class="grid-item">
 <h2>Rib-eye Steak</h2>
+  <form action = "saverate.php" method = "POST">
+  <div class="rate">
+ <input type="radio" id="star5" name="rate" value="5" >
+    <label for="star5" title="text">5 stars</label>
+    <input type="radio" id="star4" name="rate" value="4" >
+    <label for="star4" title="text">4 stars</label>
+    <input type="radio" id="star3" name="rate" value="3" >
+    <label for="star3" title="text">3 stars</label>
+    <input type="radio" id="star2" name="rate" value="2" >
+    <label for="star2" title="text">2 stars</label>
+    <input type="radio" id="star1" name="rate" value="1" >
+    <label for="star1" title="text">1 star</label>
+  </div>
+   <input type = "submit" name = "subrating" class = "rateb" value = "submit">
+	   <input type = "hidden" name = "title" value = "Rib-eye Steak">
+
+	</form>
+	<br><br><br><br>
 <img src="steak.jpeg" width="250" height="250" alt="Steak" onmouseover="BigImage(this)" onmouseout="NormalImage(this)">
 <p>Say hello to the most beautiful ribeye you have ever laid your eyes on. Perfectly crusted with foaming warm butter infused with smashed garlic cloves and fresh thyme + rosemary sprigs.</p>
  <span class = "price" > <b> 600 EGP </b> </span> <br>
